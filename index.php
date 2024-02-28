@@ -1,3 +1,3 @@
 <?php
-echo $mensaje = "pepe pica papas";
+echo $mensaje = "Hola Mundo!";
 ?>
