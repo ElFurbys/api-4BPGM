@@ -1,4 +1,4 @@
 <?php
-echo $mensaje = "Hola Mundo!";
-echo $edad = "si";
+echo $mensaje = "Hola dfdfd";
+echo $edad = "sdjsafjjhasofl";
 ?>
