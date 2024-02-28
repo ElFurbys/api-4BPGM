@@ -1,5 +1,5 @@
 <?php
-
+echo $mensaje = "Menu de Kenny´s Greedy Restaurant";
 $menu = [
     "Tortas" => "De Jamon con Huevo, De Milanesa",
     "Comida Rapida" => "Pizza de Queso con Pepperoni, Hamburguesa con Papas",
@@ -24,6 +24,6 @@ $menu = [
     "Refrescos" => "Coca Cola, Fanta de Naranja y Fresa",
     "Bebidas" => "Agua con Hielo, De Limon, Jamaica, Horchata y Zarzaparilla"
 
-]
-
+];
+echo json_encode($menu);
 ?>
