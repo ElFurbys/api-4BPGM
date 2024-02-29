@@ -1,28 +1,32 @@
 <?php
-echo $mensaje = "Menu de Kenny´s Greedy Restaurant";
+echo "¡Bienvenido a Kenny´s Greedy Restaurant! <br> </br>";
+
+echo "Abrimos de 7:00 AM hasta 8:00 PM <br> </br>";
+
+echo $mensaje = "¡Menu de Kenny´s Greedy Restaurant! <br> </br>";
 $menu = [
-    "Tortas" => "De Jamon con Huevo, De Milanesa",
-    "Comida Rapida" => "Pizza de Queso con Pepperoni, Hamburguesa con Papas",
-    "Ensalada" => "De Verduras, De Coditos",
-    "Sopa" => "De verduras, Caldo de Pollo",
-    "Pasta" => "Espagueti con Albondigas, Chilaquiles",
-    "Carnes" => "De Res, Chuleta de Cerdo",
-    "Tostadas" => "De Frijoles negros, De Frijoles con Cebolla",
-    "Tacos" => "Al Pastor, De Barbacoa y Dorados",
-    "Empanadas" => "De Queso, Carne Molida y De Atun",
-    "Frijoles" => "Frijoles Refritos, Frijoles Negros y Frijoles Bayos",
-    "Tortillas" => "De Harina y Maiz",
-    "Burritos" => "Frijol con Carne de Res, De Frijol con Queso, Aguacate, Tomate y jalapeño",
-    "Quesadillas" => "Sincronizadas, Queso con Carne y De Queso",
-    "Chiles" => "Jalapeño, Habanero",
-    "Verduras" => "Lechuga, Cebolla Blanca",
-    "Frutas" => "Aguacate, Limon y Tomate",
-    "Quesos" => "Mozzarella, Fresco y Cheddar",
-    "Salsas" => "Salsa Verde y Salsa Roja",
-    "Postre" => "Pie de Queso con Mermelada, Helado de Manzana, Vainilla, Chocolate, Fresa y Napolitano",
-    "Cafes" => "Lechero, Cafe con Leche, Capuchino",
-    "Refrescos" => "Coca Cola, Fanta de Naranja y Fresa",
-    "Bebidas" => "Agua con Hielo, De Limon, Jamaica, Horchata y Zarzaparilla"
+    "Tortas <br>" => "De Jamon con Huevo, De Milanesa <br> <br>",
+    "Comida Rapida <br>" => "Pizza de Queso con Pepperoni, Hamburguesa con Papas <br> <br>",
+    "Ensalada <br>" => "De Verduras, De Coditos <br> <br>",
+    "Sopa <br>" => "De verduras, Caldo de Pollo <br> <br>",
+    "Pasta <br>" => "Espagueti con Albondigas, Chilaquiles <br> <br>",
+    "Carnes <br>" => "De Res, Chuleta de Cerdo <br> <br>",
+    "Tostadas <br>" => "De Frijoles negros, De Frijoles con Cebolla <br> <br>",
+    "Tacos <br>" => "Al Pastor, De Barbacoa y Dorados <br> <br>",
+    "Empanadas <br>" => "De Queso, Carne Molida y De Atun <br> <br>",
+    "Frijoles <br>" => "Frijoles Refritos, Frijoles Negros y Frijoles Bayos <br> <br>",
+    "Tortillas <br>" => "De Harina y Maiz <br> <br>",
+    "Burritos <br>" => "Frijol con Carne de Res, De Frijol con Queso, Aguacate, Tomate y jalapeño <br> <br>",
+    "Quesadillas <br>" => "Sincronizadas, Queso con Carne y De Queso <br> <br>",
+    "Chiles <br>" => "Jalapeno, Habanero <br> <br>",
+    "Verduras <br>" => "Lechuga, Cebolla Blanca <br> <br>",
+    "Frutas <br>" => "Aguacate, Limon y Tomate <br> <br>",
+    "Quesos <br>" => "Mozzarella, Fresco y Cheddar <br> <br>",
+    "Salsas <br>" => "Salsa Verde y Salsa Roja <br> <br>",
+    "Postre <br>" => "Pie de Queso con Mermelada, Helado de Manzana, Vainilla, Chocolate, Fresa y Napolitano <br> <br>",
+    "Cafes <br>" => "Lechero, Cafe con Leche, Capuchino <br> <br>",
+    "Refrescos <br>" => "Coca Cola, Fanta de Naranja y Fresa <br> <br>",
+    "Bebidas <br>" => "Agua con Hielo, De Limon, Jamaica, Horchata y Zarzaparilla"
 
 ];
 echo json_encode($menu);
