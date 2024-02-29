@@ -26,4 +26,16 @@ $menu = [
 
 ];
 echo json_encode($menu);
-?>
+$ComidaPrecios = [
+    "torta De jamon" => "mediana" 30.90 ,
+    "torta de milanesa" => ,
+    "pizza de queso e peperoni" => ,
+    "Hamburguesa con papas" => ,
+    "ensalada de verduras" => ,
+    "ensalada de coditos" => ,
+    "sopa de verduras" => ,
+    "caldo de pollo" => ,
+    ""
+];
+echo json_encode($ComidaPrecios);
+?> 
