@@ -1,35 +1,39 @@
 <?php
-echo "¡Bienvenido a Kenny´s Greedy Restaurant! <br> </br>";
+echo "<h1>¡Bienvenido a Kenny´s Greedy Restaurant! <br> </h1>";
 
-echo "Abrimos de 7:00 AM hasta 8:00 PM <br> </br>";
+echo "<h2> Abrimos de 7:00 AM hasta 8:00 PM <br> </br> </h2>";
 
-echo $mensaje = "¡Menu de Kenny´s Greedy Restaurant! <br> </br>";
+echo $mensaje = "<h3> ¡Menu de Kenny´s Greedy Restaurant! <br> </br> </h3>";
 $menu = [
-    "Tortas <br>" => "De Jamon con Huevo, De Milanesa <br> <br>",
-    "Comida Rapida <br>" => "Pizza de Queso con Pepperoni, Hamburguesa con Papas <br> <br>",
-    "Ensalada <br>" => "De Verduras, De Coditos <br> <br>",
-    "Sopa <br>" => "De verduras, Caldo de Pollo <br> <br>",
-    "Pasta <br>" => "Espagueti con Albondigas, Chilaquiles <br> <br>",
-    "Carnes <br>" => "De Res, Chuleta de Cerdo <br> <br>",
-    "Tostadas <br>" => "De Frijoles negros, De Frijoles con Cebolla <br> <br>",
-    "Tacos <br>" => "Al Pastor, De Barbacoa y Dorados <br> <br>",
-    "Empanadas <br>" => "De Queso, Carne Molida y De Atun <br> <br>",
-    "Frijoles <br>" => "Frijoles Refritos, Frijoles Negros y Frijoles Bayos <br> <br>",
-    "Tortillas <br>" => "De Harina y Maiz <br> <br>",
-    "Burritos <br>" => "Frijol con Carne de Res, De Frijol con Queso, Aguacate, Tomate y jalapeño <br> <br>",
-    "Quesadillas <br>" => "Sincronizadas, Queso con Carne y De Queso <br> <br>",
-    "Chiles <br>" => "Jalapeno, Habanero <br> <br>",
-    "Verduras <br>" => "Lechuga, Cebolla Blanca <br> <br>",
-    "Frutas <br>" => "Aguacate, Limon y Tomate <br> <br>",
-    "Quesos <br>" => "Mozzarella, Fresco y Cheddar <br> <br>",
-    "Salsas <br>" => "Salsa Verde y Salsa Roja <br> <br>",
-    "Postre <br>" => "Pie de Queso con Mermelada, Helado de Manzana, Vainilla, Chocolate, Fresa y Napolitano <br> <br>",
-    "Cafes <br>" => "Lechero, Cafe con Leche, Capuchino <br> <br>",
-    "Refrescos <br>" => "Coca Cola, Fanta de Naranja y Fresa <br> <br>",
+    "Tortas <br>" => "De Jamon con Huevo, De Milanesa <br>",
+    "Comida Rapida <br>" => "Pizza de Queso con Pepperoni, Hamburguesa con Papas <br>",
+    "Ensalada <br>" => "De Verduras, De Coditos <br>",
+    "Sopa <br>" => "De verduras, Caldo de Pollo <br>",
+    "Pasta <br>" => "Espagueti con Albondigas, Chilaquiles <br>",
+    "Carnes <br>" => "De Res, Chuleta de Cerdo <br>",
+    "Tostadas <br>" => "De Frijoles negros, De Frijoles con Cebolla <br>",
+    "Tacos <br>" => "Al Pastor, De Barbacoa y Dorados <br>",
+    "Empanadas <br>" => "De Queso, Carne Molida y De Atun <br>",
+    "Frijoles <br>" => "Frijoles Refritos, Frijoles Negros y Frijoles Bayos <br>",
+    "Tortillas <br>" => "De Harina y Maiz <br>",
+    "Burritos <br>" => "Frijol con Carne de Res, De Frijol con Queso, Aguacate, Tomate y jalapeño <br>",
+    "Quesadillas <br>" => "Sincronizadas, Queso con Carne y De Queso <br>",
+    "Chiles <br>" => "Jalapeno, Habanero <br>",
+    "Verduras <br>" => "Lechuga, Cebolla Blanca <br>",
+    "Frutas <br>" => "Aguacate, Limon y Tomate <br>",
+    "Quesos <br>" => "Mozzarella, Fresco y Cheddar <br>",
+    "Salsas <br>" => "Salsa Verde y Salsa Roja <br>",
+    "Postre <br>" => "Pie de Queso con Mermelada, Helado de Manzana, Vainilla, Chocolate, Fresa y Napolitano <br>",
+    "Cafes <br>" => "Lechero, Cafe con Leche, Capuchino <br>",
+    "Refrescos <br>" => "Coca Cola, Fanta de Naranja y Fresa <br>",
     "Bebidas <br>" => "Agua con Hielo, De Limon, Jamaica, Horchata y Zarzaparilla"
 
 ];
-echo json_encode($menu);
+echo "<pre>";
+
+echo json_encode($menu, JSON_PRETTY_PRINT);
+
+echo "</pre>";
 //hacermos un objeto
 $ComidaPrecios = [
     //agrego mis atributos necesarios que son 20 
