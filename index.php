@@ -34,11 +34,13 @@ echo "<pre>";
 echo json_encode($menu, JSON_PRETTY_PRINT);
 
 echo "</pre>";
+
+echo "<h2> precio de la comida </h2>";
+echo "<br><h5> en la compra de tu comida se le puede agregar un monto mayor si es que compran ingredientes extra o agra dan el plato</h5>" ;
 //hacermos un objeto
 $ComidaPrecios = [
     //agrego mis atributos necesarios que son 20 
     
-    "<h2> precio de las comidas </h2> <br>" => "<h5> estos son los precion en la comida se le puede agregar un monto mayor si es que compran ingredientes extra </h5>" ,
     "<br>  torta De jamon<br>" =>   30.99,
     "<br>  torta de milanesa<br>" =>   36.99,
     "<br>  pizza de queso e peperoni<br>" =>   37.99,
@@ -63,7 +65,7 @@ $ComidaPrecios = [
     "<br>  empanadas de carne atun<br>"=>   40.80,
     "<br>  burritos<br>"=>   30.99,
     "<br>  quesadillas<br>"=>   40.24,
-    "<br>  tamano<br>" => "   pequeno= 1 el seleccionarlo no se agrega monto extra ,mediano= 2.  al seleccionarlo 10 peso mas, grande=3. al seleccionarlo se le agrega 20 pesos mas"
+    "<br>  eliga un tamano<br>" => "   pequeono= 1 el seleccionarlo no se agrega monto extra ,mediano= 2.  al seleccionarlo 10 peso mas, grande=3. al seleccionarlo se le agrega 20 pesos mas"
 
     /*como no se como poner numeros junto con texto pos pongo solo numeros y para el cliente seria
     algo asi como chico el estandar no se le agrega mas dinero un plato mediano es 5 pesos mas y grande 10 pesos mas
