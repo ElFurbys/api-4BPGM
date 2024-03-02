@@ -14,7 +14,7 @@ $menu = [
     "Tostadas <br>" => "De Frijoles negros, De Frijoles con Cebolla <br>",
     "Tacos <br>" => "Al Pastor, De Barbacoa y Dorados <br>",
     "Empanadas <br>" => "De Queso, Carne Molida y De Atun <br>",
-    "Frijoles <br>" => "Frijoles Refritos, Frijoles Negros y Frijoles Bayos <br>",
+    "Frijoles <br>" => "Frijoles Refritos, Frijol  es Negros y Frijoles Bayos <br>",
     "Tortillas <br>" => "De Harina y Maiz <br>",
     "Burritos <br>" => "Frijol con Carne de Res, De Frijol con Queso, Aguacate, Tomate y jalapeño <br>",
     "Quesadillas <br>" => "Sincronizadas, Queso con Carne y De Queso <br>",
@@ -79,9 +79,122 @@ echo json_encode($ComidaPrecios, JSON_PRETTY_PRINT);
 json_encode. Cuando se utiliza JSON_PRETTY_PRINT, la salida JSON se formatea 
 de manera que sea más fácil de leer e incluye los saltos de "linea" que como 
 dijo el prof no existenen el codigo mostrandolo*/
-
 echo "</pre>";
-//cerrar la etiqueta <pre>
+//cerramos la etiqueta pre
+
+echo "<h2> Tenemos las mejores bebidas </h2>";
+echo "<h3> en la compra de 4 bebidas llevate un 10% de descuento en la quinta </h3>";
+//creamos el tercer objeto
+$bebidasPrecio = [
+    //Colocamos los 20 objetos con sus 3 tipos de datos
+    "bebida1"=> "Horchata",
+    "precio1"=> 25,
+    $cantidadHorchata = 12,
+    $mensaje01 = $cantidadHorchata ? "aun nos queda" : "ya no queda agua de horchata ",
+    
+    "bebida2" => "limonada",
+    "precio2" => 20,
+    $cantidadLimomada = null,
+    $mensaje02 = $cantidadLimomada ? "aun nos queda" : "ya no queda limonada",
+
+    "bebida3" => "cafe",
+    "precio3" => 40,
+    $cantidadCafe = 20,
+    $mensaje03 = $cantidadCafe? "aun nos queda" : "ya no queda  cafe ",
+
+    "bebida4" => "Te",
+    "precio4" => 30,
+    $cantidadTe = 50,
+    $mensaje04 = $cantidadTe ? "aun nos queda" : "ya no queda Te ",
+    //de ahora en adelante copiare y pegare la misma parte del codigo para hacer esto mas rapido, solo edito
+    // las varibles y valores 
+
+    "bebida5" => "agua natural",
+    "precio5" => 35,
+    $cantidadNatural = 50,
+    $mensaje05 = $cantidadNatural ? "aun nos queda" : "ya no queda agua natural ",
+
+    "bebida6" => "agua de jamaica",
+    "precio6" => 20,
+    $cantidadJamaica = 50,
+    $mensaje06 = $cantidadJamaica ? "aun nos queda" : "ya no queda agua natural ",
+
+    "bebida7" => "agua de tamarindo",
+    "precio7" => 35,
+    $cantidadTamarindo = 3,
+    $mensaje07 = $cantidadTamarindo ? "aun nos queda" : "ya no queda agua de tamarindo ",
+
+    "bebida8" => "pepsi",
+    "precio8" => 10,
+    $cantidadPepsi = 25,
+    $mensaje08 = $cantidadPepsi ? "aun nos queda" : "ya no queda pepsi ",
+
+    "bebida9" => "CocaCola",
+    "precio9" => 35,
+    $cantidadCoca = 50,
+    $mensaje09 = $cantidadCoca ? "aun nos queda" : "ya no queda Te ",
+
+    "bebida10" => "Batido de frutas",
+    "precio10" => 35,
+    $cantidadBatido = 0,
+    $mensaje10 = $cantidadBatido ? "aun nos queda" : "ya no queda batido ",
+
+    "bebida11" => "Te negro",
+    "precio11" => 40,
+    $cantidadTeNegro = 10,
+    $mensaje11 = $cantidadTeNegro ? "aun nos queda" : "ya no queda Te negro ",
+
+    "bebida12" => "Te bobba",
+    "precio12" => 60,
+    $cantidadTeBobba = 20,
+    $mensaje12 = $cantidadTeBobba ? "aun nos queda" : "ya no queda Te bobba ",
+
+    "bebida13" => "",
+    "precio13" => 75,
+    $cantidadCapuccino = 0,
+    $mensaje13 = $cantidadCapuccino ? "aun nos queda" : "ya no queda Capuccino ",
+
+    "bebida14" => "latte",
+    "precio14" => 77,
+    $cantidadLatte = 12,
+    $mensaje14 = $cantidadLatte ? "aun nos queda" : "ya no queda latte ",
+
+    "bebida15" => "Raw super Dink",
+    "precio15" => 33,
+    $cantidadRaw = 33,
+    $mensaje15 = $cantidadRaw ? "aun nos queda" : "ya no queda raw super drink ",
+
+    "bebida16" => "agua mineral",
+    "precio16" => 27,
+    $cantidadMineral = 50,
+    $mensaje16 = $cantidadMineral ? "aun nos queda" : "ya no queda agua Mineral ",
+
+    "bebida17" => "RedBull",
+    "precio17" => 35,
+    $cantidadRedbull = 0,
+    $mensaje17 = $cantidadRedbull ? "aun nos queda" : "ya no queda Redbull ",
+
+    "bebida18" => "Fanta",
+    "precio18" => 28,
+    $cantidadFanta = 22,
+    $mensaje18 = $cantidadFanta ? "aun nos queda" : "ya no queda Fanta ",
+
+    "bebida19" => "Agua de naranja",
+    "precio19" => 35,
+    $cantidadNaranja = 50,
+    $mensaje02 = $cantidadNaranja ? "aun nos queda" : "ya no queda agua de naranja ",
+
+    "bebida20" => "batido de fresa",
+    "precio20" => 55,
+    $cantidadFresa = 11,
+    $mensaje02 = $cantidadFresa ? "aun nos queda" : "ya no quedan batidos de fresa ",
+];
+
+echo "<pre>";
+ echo json_encode($bebidasPrecio, JSON_PRETTY_PRINT);
+
+ echo "</pre>";
+
 $tamano = 2 ;
 if ($tamano <=1) {
     echo "elegiste el plato pequeno.";
