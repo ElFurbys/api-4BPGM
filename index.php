@@ -35,37 +35,161 @@ echo json_encode($menu, JSON_PRETTY_PRINT);
 
 echo "</pre>";
 
+echo "<h1> LA MEJOR COMIDA DE TIJUANA </h1>";
 echo "<h2> precio de la comida </h2>";
-echo "<br><h5> en la compra de tu comida se le puede agregar un monto mayor si es que compran ingredientes extra o agra dan el plato</h5>" ;
+echo "<br><h5> en la compra de tu comida se le puede agregar un monto mayor si es que compran ingredientes extra o agrandan el plato</h5>" ;
 //hacermos un objeto
 $ComidaPrecios = [
     //agrego mis atributos necesarios que son 20 
-    
+    //precio del platillo en genral float
     "<br>  torta De jamon<br>" =>   30.99,
+    //igreso el tamno y el monto extra en los precios 
+    //precio de tamano tipo interger
+    "<br> plato mediano 1 " => 40,
+    "<br> plato grande 1 " => 40,
+    //dando valor null o verdadero
+    $canplatillo1 = 1,
+    //evalua si es nul o no y muesta en pantalla el mensaje hay y si no hay pos que no hay 
+    $mens1 = $canplatillo1 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
+//como mi companero bryan hizo yo tambien tego hueva de escribir asi que solo copio y pego esta parte
     "<br>  torta de milanesa<br>" =>   36.99,
+    "<br> plato mediano 2 " => 50,
+    "<br> plato grande 2 " => 10,
+    $canplatillo2 = 0,
+    $mens1 = $canplatillo2 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  pizza de queso e peperoni<br>" =>   37.99,
+    "<br> plato mediano 3 " => 50,
+    "<br> plato grande 3 " => 50,
+    $canplatillo3 = 1,
+    $mens1 = $canplatillo3 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  Hamburguesa con papas<br>" =>   40.99,
+    "<br> plato mediano 4 " => 60,
+    "<br> plato grande 4 " => 10,
+    $canplatillo4 = 0,
+    $mens1 = $canplatillo4 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  ensalada de verduras<br>" =>   80.99,
+    "<br> plato mediano 5 " => 20,
+    "<br> plato grande 5 " => 30,
+    $canplatillo5 = 1,
+    $mens1 = $canplatillo5 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  ensalada de coditos<br>" =>   20.99,
+    "<br> plato mediano 6 " => 10,
+    "<br> plato grande 6 " => 50,
+    $canplatillo6 = 1,
+    $mens1 = $canplatillo6 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  sopa de verduras<br>" =>   40.99,
+    "<br> plato mediano 7 " => 20,
+    "<br> plato grande 7 " => 40,
+    $canplatillo7 = 1,
+    $mens1 = $canplatillo7 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  caldo de pollo<br>" =>   80.51,
+    "<br> plato mediano 8 " => 30,
+    "<br> plato grande 8 " => 30,
+    $canplatillo8 = 0,
+    $mens1 = $canplatillo8 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  Espagueti con Albondigas<br>" =>   20.90 ,
+    "<br> plato mediano 9 " => 40,
+    "<br> plato grande 9 " => 20,
+    $canplatillo9 = 1,
+    $mens1 = $canplatillo9 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  Chilaquiles<br>"=>   5.99 ,
+    "<br> plato mediano 10 " => 40,
+    "<br> plato grande 10 " => 30,
+    $canplatillo10 = 1,
+    $mens1 = $canplatillo10 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  carne de res<br>"=>   999.99 ,
+    "<br> plato mediano 11 " => 80,
+    "<br> plato grande 11 " => 20,
+    $canplatillo11 = 1,
+    $mens1 = $canplatillo11 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  chuleta de cerdo<br>"=>   40.99 ,
+    "<br> plato mediano 12 " => 10,
+    "<br> plato grande 12 " => 70,
+    $canplatillo12 = 1,
+    $mens1 = $canplatillo12 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  tostadas de frigoles negros<br>" =>   20.30 ,
+    "<br> plato mediano 14 " => 10,
+    "<br> plato grande 14 " => 80,
+    $canplatillo14 = 0,
+    $mens1 = $canplatillo14 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  tostadas de frigoles con cebolla<br>" =>   40.51 ,
+    "<br> plato mediano 15 " => 60,
+    "<br> plato grande 15 " => 90,
+    $canplatillo15 = 0,
+    $mens1 = $canplatillo15 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  tortillas de maiz<br>"=>   15.02 ,
+    "<br> plato mediano 16 " => 0,
+    "<br> plato grande 16 " => 0,
+    $canplatillo16 = 1,
+    $mens1 = $canplatillo16 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  tortillas de harina<br>"=>   20.52 ,
+    "<br> plato mediano 17 " => 50,
+    "<br> plato grande 17 " => 60,
+    $canplatillo17 = 1,
+    $mens1 = $canplatillo17 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  tacos al pastor<br>"=>   25.10 ,
+    "<br> plato mediano 18 " => 40,
+    "<br> plato grande 18 " => 70,
+    $canplatillo18 = 1,
+    $mens1 = $canplatillo18 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  tacos de barbacoa<br>"=>   25.20 ,
+    "<br> plato mediano 19 " => 20,
+    "<br> plato grande 19 " => 60,
+    $canplatillo19 = 1,
+    $mens1 = $canplatillo16 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  tacos dorados de papa<br>"=>   25.20 ,
+    "<br> plato mediano 20 " => 40,
+    "<br> plato grande 20 " => 90,
+    $canplatillo20 = 1,
+    $mens1 = $canplatillo20 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  empanadas de queso<br>"=>   50.02,
+    "<br> plato mediano 21 " => 50,
+    "<br> plato grande 21 " => 0,
+    $canplatillo21 = 1,
+    $mens1 = $canplatillo21 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  empanadas de carne molida<br>"=>   55.10,
+    "<br> plato mediano 22 " => 60,
+    "<br> plato grande 22 " => 420,
+    $canplatillo22 = 1,
+    $mens1 = $canplatillo22 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  empanadas de carne atun<br>"=>   40.80,
+    "<br> plato mediano 23 " => 50,
+    "<br> plato grande 23 " => 5000,
+    $canplatillo23 = 1,
+    $mens1 = $canplatillo23 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  burritos<br>"=>   30.99,
+    "<br> plato mediano 24 " => 80,
+    "<br> plato grande 24 " => 30,
+    $canplatillo24 = 0,
+    $mens1 = $canplatillo24 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
+
     "<br>  quesadillas<br>"=>   40.24,
-    "<br>  eliga un tamano<br>" => "   pequeono= 1 el seleccionarlo no se agrega monto extra ,mediano= 2.  al seleccionarlo 10 peso mas, grande=3. al seleccionarlo se le agrega 20 pesos mas"
+    "<br> plato mediano 25 " => 0,
+    "<br> plato grande 25  " => 10,
+    $canplatillo25 = 1,
+    $mens1 = $canplatillo25 ? "aun nos queda comida" : "ya no hay comida una disculpa ",
 
     /*como no se como poner numeros junto con texto pos pongo solo numeros y para el cliente seria
     algo asi como chico el estandar no se le agrega mas dinero un plato mediano es 5 pesos mas y grande 10 pesos mas
@@ -195,14 +319,7 @@ echo "<pre>";
 
  echo "</pre>";
 
-$tamano = 2 ;
-if ($tamano <=1) {
-    echo "elegiste el plato pequeno.";
-}elseif ($tamano = 2) {
-    echo "elegiste el plato mediano se le agregara 10 pesos extra";
-}else{
-    echo "perdon hubo un error vuele a elegir desde cero";
-}
+
 //elegir el tamano de la comida
 
 ?> 
