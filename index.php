@@ -322,4 +322,59 @@ echo "<pre>";
 
 //elegir el tamano de la comida
 
+$incredientes = [
+    "chile jelapeno " => "una pieza",
+    $cantidadjalapeno= 1,
+    "precio jalapeno" => 1.5,
+
+    "habanero " => "dos piezas",
+    $cantidadhabanero= 2,
+    "precio habanero" => 2.5,
+
+    "lechuga" => "tres hojas",
+    $cantidadlechuga= 3,
+    "precio lechuga" => 2.5,
+
+    "cebolla" => "dos rodajas",
+    $cantidadcebolla= 2,
+    "precio cebolla" => 1.7,
+
+    "aguacate" => "la mitad",
+    $cantidadaguacate=2,
+    "precio aguacate" => 3.5,
+
+    "limon" => "una piza",
+    $cantidadlimon= 1
+    "precio limon" => 1.0
+
+    "tomate" => "dos rodajas",
+    $cantidadtomate= 2
+    "precio tomate" => 1.0
+
+    "mozzarela" => "7 gramos",
+    $cantidadmozzarela= 7,
+    "precio mozzarela" => 1.5
+
+    "fresco" => "4 gramos",
+    $cantodadfresco= 4,
+    "precio fresco" => 0.99
+
+    "chedar" => "5 gramos",
+    $cantodadchedar= 5,
+    "precio chedar" => 1.0,
+
+    "salsa verde" => "1 gramo",
+    $cantidadsalsaverde= 1,
+    "preco salsa verde" => 0.50
+
+    "salsa roja" => "1 gramo",
+    $cantidadsalsaroja= 1,
+    "precio salsa roja" => 0.55,
+    
+    ];
+echo "<pre>";
+ echo json_encode($incredientes, JSON_PRETTY_PRINT);
+
+ echo "</pre>";
+
 ?> 
